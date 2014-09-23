@@ -1,0 +1,10 @@
+baseurl: /chicago
+permalink: pretty
+markdown: kramdown
+paginate: 5
+repo: chicago
+github_org: maptime
+maptime:
+  chapter: Maptime Chicago
+  twitter: maptimeCHI
+  #disqus: YOUR DISQUS USERNAME
