@@ -1,10 +1,10 @@
-baseurl: /starter
+baseurl: /chicago
 permalink: pretty
 markdown: kramdown
 paginate: 5
-repo: starter
+repo: chicago
 github_org: maptime
 maptime:
-  chapter: Meetup name
-  twitter: YourName
+  chapter: Maptime Chicago
+  twitter: maptimeCHI
   #disqus: YOUR DISQUS USERNAME
