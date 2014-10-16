@@ -9,7 +9,7 @@ a       { color:#279acb; }
 a:hover { text-decoration:underline; }
 
 .dark a, 
-.dark a:hover { color:#111111; text-decoration:none; }
+.dark a:hover { color:#333333; text-decoration:none; }
 
 h1 a,
 h2 a,
