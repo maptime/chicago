@@ -101,8 +101,8 @@ h6 a:hover { text-decoration:none;}
 
 .fill-light   { background-color:#eee; }
 
-.fill-blue            { background-color:#B3DDF2; }
-a.fill-blue:hover     { background-color:#279acb; text-decoration:none; }
+.fill-blue            { background-color:#2babe2; }
+a.fill-blue:hover     { background-color:#B3DDF2; text-decoration:none; }
 .fill-purple          { background-color:#652e8e; }
 a.fill-purple:hover   { background-color:#5b2980; text-decoration:none; }
 .fill-green           { background-color:#009347; }
