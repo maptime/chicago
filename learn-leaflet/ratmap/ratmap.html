@@ -1,0 +1,49 @@
+<html>
+<head>
+  <title>A Leaflet map!</title>
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script> 
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <style>
+    #map{ height: 100% }
+  </style>
+</head>
+<body>
+
+  <div id="map"></div>
+
+  <script>
+
+  // initialize the map
+  var map = L.map('map').setView([41.8947, -87.6105], 11);
+
+  // load a tile layer
+  L.tileLayer('http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.png',
+    {
+      attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL,</a> and <a href="https://data.cityofchicago.org/Service-Requests/311-Service-Requests-Rodent-Baiting/97t6-zrhs?">City of Chicago</a>',
+      maxZoom: 17,
+      minZoom: 9
+    }).addTo(map);
+
+  // load GeoJSON from external file
+  $.getJSON("ratmap.geojson", function(data){
+    // rat icon!
+    var ratIcon = L.icon({
+      iconUrl: 'rat.png',
+      iconSize: [60,50]
+    });
+    // add GeoJSON layer to map once the file is loaded
+    L.geoJson(data,{ 
+    // point to layer function passed to L.geoJson. Tells leaflet how to convert a point feature into a map layer
+      pointToLayer: function(feature,latlng){
+        var marker = L.marker(latlng,{icon: ratIcon});
+        // bindPopup to the marker. Popup should include the street address, a line break, then the creation date, loaded from the geoJson file
+        marker.bindPopup(feature.properties.Street_Add + '</br>' + feature.properties.Creation_D);
+        return marker;
+      }
+    }).addTo(map);
+  });
+
+  </script>
+</body>
+</html>
