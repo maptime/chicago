@@ -2,7 +2,9 @@
 <head>
   <title>A Leaflet map!</title>
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+  <link rel="stylesheet" href="MarkerCluster.css"/>
   <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script> 
+  <script src="markercluster.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <style>
     #map{ height: 100% }
@@ -25,15 +27,34 @@
       minZoom: 9
     }).addTo(map);
 
-  // load GeoJSON from external file
+  $.getJSON("neighborhoods.geojson",function(hoodData){
+    L.geoJson(hoodData, {
+      style: function(feature){
+        var fillColor,
+          density = feature.properties.density;
+        if (density > 80) fillColor = "#006837";
+        else if (density > 40) fillColor = "#31a354";
+        else if (density > 20) fillColor = "#78c679";
+        else if (density > 10) fillColor = "#c2e699";
+        else if (density > 0) fillColor = "#ffffcc";
+        else fillColor = "#f7f7f7"; // no data
+        return { color: "#999", weight: 1, fillColor: fillColor, fillOpacity: .6 };
+      },
+      onEachFeature: function( feature, layer ){
+        layer.bindPopup( "<strong>" + feature.properties.PRI_NEIGH + "</strong><br/>" + feature.properties.density + " rats per square mile" )
+      }
+    }).addTo(map);
+  });
+
+  // load GeoJSON point data from external file
   $.getJSON("ratmap.geojson", function(data){
     // rat icon!
     var ratIcon = L.icon({
       iconUrl: 'rat.png',
       iconSize: [60,50]
     });
-    // add GeoJSON layer to map once the file is loaded
-    L.geoJson(data,{ 
+    // add GeoJSON layer to map once the file is loaded, assign to 'rodents variable'
+   var rodents = L.geoJson(data,{ 
     // point to layer function passed to L.geoJson. Tells leaflet how to convert a point feature into a map layer
       pointToLayer: function(feature,latlng){
         var marker = L.marker(latlng,{icon: ratIcon});
@@ -41,8 +62,11 @@
         marker.bindPopup(feature.properties.Street_Add + '</br>' + feature.properties.Creation_D);
         return marker;
       }
-    }).addTo(map);
-  });
+    });
+    var clusters = L.markerClusterGroup();
+    clusters.addLayer(rodents);
+    map.addLayer(clusters);
+  }); // removed addTo(map) because it is handled by the markercluster script
 
   </script>
 </body>
