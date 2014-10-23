@@ -17,3 +17,15 @@ The event will take place at the ThoughtWorks Chicago office, [200 East Randolph
 - When: Thursday, October 23rd, 5:30 - 8:30pm
 - Where: 200 E Randolph St., Chicago
 - Contact: [@MaptimeChi](http://twitter.com/maptimechi)
+
+**Update!**
+
+Here are some resources from the meetup:
+
+- Slides!
+- [Ratmap tutorial](http://maptimeboston.github.io/leaflet-intro/)
+  - Chicago-specific [ratmap source](https://gist.github.com/danswick/64da467bd273d71229c3) and [block](http://bl.ocks.org/danswick/64da467bd273d71229c3)
+  - [Rat points](https://gist.githubusercontent.com/danswick/64da467bd273d71229c3/raw/39bf40386fc680c14b31e1ae8fde9f532e7e76cb/ratmap.geojson) (GeoJSON)
+  - [Neighborhood boundaries with rat density data](https://gist.githubusercontent.com/danswick/64da467bd273d71229c3/raw/6b8420651cf16aaa518cabdfe8a0dc5e2ba70a77/neighborhoods.geojson) (GeoJSON)
+
+**[Don't forget to take the MaptimeChi survey!](https://docs.google.com/forms/d/1cg_bb35GagkEcKT8ZA07xpeBwq5bSyTplXpAtDIBa_A/viewform)**
