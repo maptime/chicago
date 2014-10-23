@@ -92,8 +92,21 @@
 <script src='big.js'></script>
 </head><body>
 
-<div>Making Your First Web Map With <strong>Leaflet</strong>!</div>
+<!-- intro and maptimey goodness -->
+<div><img src="./images/chicago.png" /><em style="text-shadow: 0 0 0.1em #000000">Welcome to Maptime Chicago!</em></div>
+<div>← and → to navigate</div>
+<div><img src="./images/maptime.gif" />  </div>
 <div>Go to <a href="http://maptime.io/chicago/learn-leaflet/">http://maptime.io/chicago/learn-leaflet/</a> to follow along.</div>
+<div><em>PLEASE</em> interrupt if you have questions!</div>
+<div><strong>First things first</strong>: What is Maptime all about?</div>
+<div><ol><li>A time for learning about maps</li><li>Hands-on</li><li>Beginner-focused</li><li>Emphasis on open source, programming and web-mapping</li></ol><em>Stolen from <a href="http://t.co/XKa8sFFvJp">Lyzi Diamond</a></em></div>
+<div>There are Maptime resources all over <ol><li><a href="https://github.com/maptime">GitHub</a></li><li><a href="http://maptime.github.io/about/">maptime.github.io</a></li><li><a href="www.twitter.com/maptimeCHI">Twitter</a></li><li>Etc...</li></ol></div>
+<div>Our <a href="http://maptime.github.io/about/">mission</a> is to open the doors of cartographic possibility to anyone interested</div>
+<div>Maptime <a href="bit.ly/why-maptime">exists</a> because <strong>community</strong>, <strong>inclusivity</strong>, and <strong>accessibility</strong> are important components of <em>positive</em> learning experiences.</div>
+
+<!-- start leaflet section -->
+<div>Let's get down to business, shall we?</div>
+<div>Making Your First Web Map With <strong>Leaflet</strong>!</div>
 <div>Let's talk about <strong>web maps</strong>!</div>
 <div>What is a <em>web map</em>?</div>
 <div><strong>First of all:</strong> A web map is a <em>map</em> that lives on the <em>web</em>.</div>
@@ -136,12 +149,22 @@
 <div>You have <strong>access</strong> to everything in that library. In our case, it's a <em>bunch of cool tools</em> to make web maps and give them <strong>familiar functionality.</strong></div>
 <div data-bodyclass="leaflet-api"></div>
 <div>(You can read more about <em>Leaflet</em> at <a href="http://leafletjs.com">leafletjs.com</a>.)</div>
+<div><strong>TECHNOLOGY BREAK</strong><br/>If you don't already have a text editor on your computer, let's get you set up.</div>
+<div>I will be using <a href="http://www.sublimetext.com/3">Sublime Text</a>, which should work great on any operating system. Head to that link and install the proper version.</div>
+<div>If you are using a work computer and don't have install rights, <em>that's okay</em>!</div>
+<div><strong>Notepad</strong> on Windows or <strong>TextEdit</strong> on Mac will work fine for today.</div>
+<div>If you're on Linux, you've probably already got this figured out.</div>
+<div>Once you've got your text editor situation sorted, head to <a href="https://gist.github.com/danswick/f2c18eb24a4fd2b91135">this URL</a>, which is a bit of <em>HTML</em> to get you started.</div>
+<div>Copy and paste the contents into your text editor and save it as somthing like <em>map.html</em>.</div>
+<div><strong>Got it?</strong></div>
 <div>The <strong>first awesome thing</strong> we can do with Leaflet is make ourselves a <em>map container</em>.</div>
 <div data-bodyclass="map"><pre><span>var map = L.map('leaflet-map');</span></pre></div>
 <div>The <pre><span>'leaflet-map'</span></pre> in that tag refers to the <strong>div</strong> on the page where the map is going to live.</div>
 <div data-bodyclass="html1"></div>
 <div>But it's <em>empty</em>. We haven't added any <strong>tiles</strong>. Let's <em>do that</em>.</div>
 <div>There are many <strong>free tilesets</strong> on the web. Let's use some from <a href="http://stamen.com">Stamen</a>.</div>
+
+<!-- correct coordinates for Chicago! -->
 <div data-bodyclass="map2"><pre><span>var map = L.map('leaflet-map').<br>setView([41.8947, -87.6105], 13);<br><br>L.tileLayer('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg').<br>addTo(map);</span></pre></div>
 <div>We added some <em>tiles</em>, centered the map on <strong>The Loop</strong>, and gave it a <em>zoom level</em>.</div>
 <div data-bodyclass="html2"></div>
@@ -149,10 +172,14 @@
 <div>A <em>very pretty</em> reference map with <strong>no labels</strong>, but a <em>reference map</em> nonetheless.</div>
 <div>What if we want to show <strong>some data</strong> on the map? Maybe <em>this building</em> we're sitting in.</div>
 <div><strong>We can do that!</strong></div>
+
+<!-- oh yeah, more Chicago coords! --> 
 <div data-bodyclass="map3"><pre><span>L.marker([41.885100, -87.621699]).addTo(map);</span></pre></div>
 <div>We added a <em>map marker</em> at the <strong>lat/lon</strong> of the hotel to the map.</div>
 <div data-bodyclass="html3"></div>
 <div><strong>Last part.</strong> Let's add a <em>popup</em> to the marker so when we <strong>click</strong> on it it'll tell us <em>what it's identifying.</em></div>
+
+<!-- sweet popup, bro -->
 <div data-bodyclass="map4"><br><br><pre><span>L.marker([41.885100, -87.621699])<br>.bindPopup("Maptime!").addTo(map);</span></pre></div>
 <div>We <strong>binded a popup</strong> to the marker that says <em>Maptime!</em>.</div>
 <div data-bodyclass="html4"></div>
@@ -161,8 +188,10 @@
 <div>Wasn't that <strong>so fun?</strong>!</div>
 <div><em>You can do this on your own!</em> Go forth and make <strong>web maps</strong>!</div>
 <div>Remember: <em>You're a</em> <strong>champion!</strong> Keep going! <em>You can do it!</em></div>
+<div>For extra fun practice, make a <a href="http://maptimeboston.github.io/leaflet-intro/">Rat Map</a>!</div>
+<div>The tutorial in the previous slide will guide you through the process and <a href="http://maptime.io/chicago/event/2014/10/15/maptober-leaflet/">the data here</a> will make your rat map <em>Chicago-specific.</em></div>
+<div><strong>Here it is again:</strong><ol><li><a href="http://maptimeboston.github.io/leaflet-intro/">Tutorial</a></li><li><a href="http://maptime.io/chicago/event/2014/10/15/maptober-leaflet/">Rat data</a></li></ol></div>
 <div>Thanks!</div>
 <div>My name is <em>Dan</em>! I am on Twitter at <a href="http://twitter.com/danswick">@danswick</a>! Please come talk to me! <strong>I like talking to people!</strong></div>
-
 </body>
 </html>
