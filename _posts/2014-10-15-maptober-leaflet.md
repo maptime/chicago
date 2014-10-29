@@ -22,7 +22,7 @@ The event will take place at the ThoughtWorks Chicago office, [200 East Randolph
 
 Here are some resources from the meetup:
 
-- Slides!
+- [Slides!](http://maptime.io/chicago/learn-leaflet)
 - [Ratmap tutorial](http://maptimeboston.github.io/leaflet-intro/)
   - Chicago-specific [ratmap source](https://gist.github.com/danswick/64da467bd273d71229c3) and [block](http://bl.ocks.org/danswick/64da467bd273d71229c3)
   - [Rat points](https://gist.githubusercontent.com/danswick/64da467bd273d71229c3/raw/39bf40386fc680c14b31e1ae8fde9f532e7e76cb/ratmap.geojson) (GeoJSON)
