@@ -1,0 +1,120 @@
+<!DOCTYPE html >
+<html>
+<head>
+  <meta charset='UTF-8'/>
+  <meta name='twitter:site' content='@maptimeCHI' />
+  <meta property='og:site_name' content='Maptime Chicago' />
+  <meta name='twitter:url' content='' />
+  <meta property='og:url' content='' />
+  <meta name='twitter:title' content='This is Maptime Chicago!' />
+  <meta property='og:title' content='This is Maptime Chicago!' />
+  <meta name='twitter:description' content='MaptimeChi is Chicago’s offshoot of MaptimeSF, a weekly meetup of mappers and map learners interested in creating a time and space for collaborative learning, exploration, and map creation using mapping...' />
+  <meta property='og:description' content='MaptimeChi is Chicago’s offshoot of MaptimeSF, a weekly meetup of mappers and map learners interested in creating a time and space for collaborative learning, exploration, and map creation using mapping...' />
+  
+  <title>Maptime Chicago | This is Maptime Chicago!</title>
+  <link rel='stylesheet' href='/chicago/site.css' type='text/css'/>
+  <link rel='shortcut icon' href='/chicago/img/favicon.png' type='image/x-icon' />
+  <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.css' rel='stylesheet' />
+</head>
+<body>
+  <div class='masthead fill-blue'>
+    <div class='fill-darken0 pad1y strong dark'>
+      <div class='limiter'>
+        <a href='http://maptime.io/'>maptime.io</a>
+      </div>
+    </div>
+  </div>
+  <header class='fill-chapter'>
+    <div class='limiter contain'>
+      <a href='/chicago/' class='sprite maptime pin-left'>Maptime</a>
+      <div class='col12 clearfix pad2y'>
+        <div class='round pad2 col6 margin6 strong dark fill-darken0 fill-green row4 truncate contain'>
+          <h1><a class='dark contain z1' href='/chicago/'>Maptime Chicago</a></h1>
+          <div class='pin-right pad4x pad1y hide-mobile'>
+            <span class='sprite marker'></span>
+          </div>
+          <a href='https://twitter.com/maptimeCHI/' class='contain z1 fill-blue button'>
+            @maptimeCHI on Twitter
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class='limiter pad4y'>
+    <div class='col12 clearfix'>
+      <aside class='col3 fr space-bottom2 sidebar'>
+        <div class='fill-purple strong dark round pad2 space-bottom2'>
+          <h3>The next Maptime Chicago is:</h3>
+          <div id='rsvpdate'></div>
+        </div>
+
+        <div class='hide-mobile'>
+          <div class='popup-group'>
+            <a href='https://github.com/maptime/chicago/' class='col12 space-bottom2 button'>Watch these events</a>
+            <div class='popup popup-big keyline-all pad1 small round'>
+              <ol class='space-bottom1'>
+                <li>1. Click the <strong>Watch these events</strong> button.</li>
+                <li>2. Login to GitHub or signup for an account.</li>
+                <li>3. Click the <strong>Watch</strong> button on the repo.</li>
+              </ol>
+              <div class='center'>
+                <img src='/chicago/img/watchrepo.png' alt='Watch repo' />
+              </div>
+            </div>
+          </div>
+
+          <div class='followers'></div>
+          <div class='center'>
+            <div class='pad0y space-bottom2'>
+              <a class='small' href='https://github.com/maptime/chicago/watchers'>View all</a>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <div class='col8 margin2r prose content'>
+        <h2>This is Maptime Chicago!</h2>
+<p>MaptimeChi is Chicago’s offshoot of MaptimeSF, a weekly meetup of mappers and map learners interested in creating a time and space for collaborative learning, exploration, and map creation using mapping tools and technologies. </p>
+
+<p>Beginners are always very welcome!</p>
+
+<p>Events will be posted here monthly. If you’d like to contribute, help organize an event or have a fantastic idea, please reach out to <a href="http://twitter.com/maptimechi">@MaptimeChi</a> or <a href="http://twitter.com/danswick">@danswick</a>. </p>
+
+<p>Welcome!</p>
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <footer class='fill-light pad2y'>
+    <div class='limiter center small quiet'>
+      <p>This website is <a href='http://github.com/maptime/chicago/'>open source</a> and you can improve it. Learn more about contributing <a href='https://guides.github.com/activities/forking/'>here</a>.</p>
+   </div>
+  </footer>
+
+<script src='/chicago/js/jquery.min.js'></script>
+<script src='/chicago/js/underscore.min.js'></script>
+<script src='/chicago/site.js'></script>
+<script>
+  var rsvp = document.getElementById('rsvpdate');
+  var date,formatted,link;
+  ''
+    date = '2014,12,14';
+    formatted = 'Sunday, Dec 14 2014';
+    link = 'http://opengovhacknight.org/';
+  ''
+
+  if (date && new Date().getTime() <= new Date(date).getTime() + (24 * 60 * 60 * 1000)) {
+    rsvp.innerHTML = '<h3>' + formatted + '</h3>' +
+    '<a class="button fill-orange block" href=' + link + '>RSVP</a>';
+  } else {
+    rsvp.innerHTML = '<h3>TBA</h3>';
+  }
+</script>
+
+</body>
+</html>

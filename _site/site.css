@@ -541,7 +541,7 @@ a       { color:#279acb; }
 a:hover { text-decoration:underline; }
 
 .dark a, 
-.dark a:hover { color:#fff; text-decoration:none; }
+.dark a:hover { color:#333333; text-decoration:none; }
 
 h1 a,
 h2 a,
@@ -634,7 +634,7 @@ h6 a:hover { text-decoration:none;}
 .fill-light   { background-color:#eee; }
 
 .fill-blue            { background-color:#2babe2; }
-a.fill-blue:hover     { background-color:#279acb; text-decoration:none; }
+a.fill-blue:hover     { background-color:#B3DDF2; text-decoration:none; }
 .fill-purple          { background-color:#652e8e; }
 a.fill-purple:hover   { background-color:#5b2980; text-decoration:none; }
 .fill-green           { background-color:#009347; }
@@ -652,7 +652,7 @@ a.fill-darken0:hover  { background-color:rgba(0,0,0,0.15); }
 
 .fill-chapter {
   /* Replace this with a map of your city */
-  /* background-image:url(img/toronto.png); */
+  background-image:url(img/chicago.png);
   background-repeat:no-repeat;
   background-size:cover;
   max-width:100%;
