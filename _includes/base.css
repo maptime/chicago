@@ -321,7 +321,7 @@ table {
   padding-top:0;
   }
 
-#mc_embed_signup .email {
+#mc_embed_signup, #mc_embed_signup_scroll input.email {
   width: 100%;
 }
 
