@@ -116,28 +116,20 @@
 <div class="slide image_full">
 	<img src="images/chugiak_alaska1.png"/>
 	<p class="title">Intro to QGIS - Make a Map<br>
-	<a target="_blank" href="http://github.com/maptimeboston">#maptimeBoston</a></p>
-	<a class="citation" href="http://github.com/maptimeboston">Maptime Boston</a>
+	<a target="_blank" href="http://maptime.io/chicago">Maptime Chicago</a></p>
+	<a class="citation" href="https://github.com/maptime/chicago/tree/gh-pages/qgis-101">Maptime Chicago</a>
 </div>
 
 <div class="slide">
 	<p><u>Announcements</u><br>
-	Tomorrow: Avid Geo!<br>
-	Javascript: 6pm @ Hack/Reduce<br>
-	<a target="_blank" href="http://www.meetup.com/avidgeo/events/194850452/">RSVP Here</a></p>
-</div>
-
-<div class="slide">
-	<p><u>Announcements</u><br>
-	NACIS 2014 Conference<br>
-	October 9-11 - Pittsburgh<br>
-	<a target="_blank" href="http://nacis.org/annual-meeting/current-meeting/">Registration</a></p>
+	Tomorrow: Iron Sheep<br>
+	6:30pm @ TechNexus<br>
+	<a target="_blank" href="http://www.floatingsheep.org/2015/02/ironsheep-2015-be-there-or-be-iguana.html">RSVP Here</a></p>
 </div>
 
 <div class="slide">
 	<p><u>Thank You</u><br>
-	Cambridge Innovation Center<br>
-	Axis Maps<br></p>
+	<a target="_black" href="http://www.smartchicagocollaborative.org/"> Smart Chicago</a></p>
 </div>
 
 <div class="slide image_full">
@@ -153,7 +145,7 @@
 </div>
 
 <div class="slide">
-	<p>Official Project of QSGEO<br>
+	<p>Official Project of OSGEO<br>
 	Runs on Linux, Unix, Mac OSX, Windows, and Android(!)<br>
 	Fully capable, supports vector (points, lines, polygons) and raster</p>
 </div>
@@ -166,7 +158,7 @@
 
 <div class="slide image_bottom">
 	<img src="images/osgeo.png"/>
-	<p>Who is QSGEO?<br>
+	<p>Who is OSGEO?<br>
 	<a target="_blank" href="http://www.gnu.org/copyleft/gpl.html">Open Source Geospatial Foundation</a><br>
 	Community of Developers<br>
 	QGIS, Grass, OpenLayers, etc.</p>
@@ -190,37 +182,42 @@
 	<img src="images/qgisdesktopscreenshot.jpg"/>
 	<p class="title">QGIS Desktop<br>
 	</p>
+	<notes>Create, edit, visualise, analyse and publish geospatial information. For Windows, Mac, Linux, BSD and Android.</notes>
 </div>
 
 <div class="slide image_full">
 	<img src="images/qgisbrowserscreenshot.png"/>
 	<p class="title">QGIS Browser<br>
 	</p>
+	<notes>Browse and preview your data and metadata. Drag and drop your data from one datastore into the other one.</notes>
 </div>
 
 <div class="slide image_full">
 	<img src="images/qgisserverscreenshot.png"/>
 	<p class="title">QGIS Server<br>
 	</p>
+	<notes>Publish your QGIS projects and layers as OGC compatible WMS and WFS services. Control which layers, attributes, layouts and coordinate systems are exported.</notes>
 </div>
 
 <div class="slide image_full">
 	<img src="images/qgiswebclientscreenshot.png"/>
 	<p class="title">QGIS Web Client<br>
 	</p>
+	<notes>Publish your QGIS projects on the web with ease. Benefit from the powerful symbology, labeling and blending features to impress with your maps.</notes>
 </div>
 
 <div class="slide image_full">
 	<img src="images/qgisandroidscreenshot.jpg"/>
 	<p class="title">QGIS for Android (beta)<br>
 	Mobile! Try if you dare!</p>
+	<notes>Work is being done to use QGIS on Android devices. Current builds are very experimental, and not for the faint of heart.</notes>
 </div>
 
 <div class="slide image_full">
 	<img src="images/chugiak_alaska1.png"/>
 	<p class="title">Lets make maps! Download:<br>
-	<a target="_blank" href="http://www.qgis.org/en/site/">QGIS 2.4</a><br>
-	Chugiak</p>
+	<a target="_blank" href="http://www.qgis.org/en/site/">QGIS 2.8</a><br>
+	Chugiak<br></p>
 </div>
 
 <div class="slide image_bottom">
@@ -439,6 +436,9 @@
 		resize();
 
 		if (window.location.hash !== n) window.location.hash = n;
+
+	var notes = slide.getElementsByTagName('notes');
+    if (notes.length) console.log('%c'+n+': '+notes[0].innerHTML.trim(), 'padding:5px;font-family:serif;font-size:14px;line-height:150%;');
 	}
 
 	var styleSlide = {
