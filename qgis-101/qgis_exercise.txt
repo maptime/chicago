@@ -17,7 +17,9 @@ basic geoprocessing, and using the print composer.
 	Unzip to access datasets.
 
 3. Export and project the CSV
-	Note: Use Massachusetts State Plane - Mainland Zone - Meters
+	Note: Some datasets from the Chicago data portal are projected in [Illinois State Plane East / EPSG 102671](https://github.com/Chicago/food-deserts/issues/3) and others are in the geographic coordinate system [EPSG 4326](http://spatialreference.org/ref/epsg/wgs-84/). Sometimes you'll have to check both, but in this case, the rodent complaint data is in EPSG: 4326. 
+
+	Note2: Our neighborhood boundaries are *projected* and will use **EPSG: 3857**. We'll discuss projections and coordinate systems during a future Maptime, but please ask questions if you're curious. 
 
 4. Enable On-The-Fly Projections
 
@@ -40,8 +42,12 @@ basic geoprocessing, and using the print composer.
 
 8. Export and Save
 
-Some ideas to try:
-	Make a map of the neighborhoods with the highest number of rat incidents
-	Map all areas near a rat incident
-	Map Rat Incidents by type and date
-	Or find some other data, add it, and combine!
+
+
+##Some ideas to try:
+
+* Make a map of the neighborhoods with the highest number of rat incidents
+* Map all areas near a rat incident
+* Map Rat Incidents by type and date
+* Or find some other data, add it, and combine!
+* Think about why certain neighborhoods seem to have a lot more rat **complaints** than other neighborhoods

@@ -109,6 +109,18 @@
 		.code{
 			font-family: 'Courier New';
 		}
+
+		em {
+			display: inline-block;
+			background-color: #921E11;
+			color: #fff;
+			font-style: normal;
+		}
+
+		notes {
+			display: none;
+		}
+
 	</style>
 </head>
 <body>
@@ -223,7 +235,7 @@
 <div class="slide image_bottom">
 	<img src="images/rat-map.jpg"/>
 	<p>Todays Task: RAT MAP!<br>
-	<a target="_blank" href="https://data.cityofboston.gov/">Open Data Boston</a></p>
+	<a target="_blank" href="https://data.cityofchicago.org/Service-Requests/311-Service-Requests-Rodent-Baiting/97t6-zrhs">Chicago Data Portal</a></p>
 </div>
 
 <div class="slide image_bottom">
@@ -277,8 +289,13 @@
 	<p class="title">Add Data</p>
 </div>
 
+<div class="slide image_bottom">
+	<p>See that nifty little comma button???</p>
+	<img src="images/add-data-csv.png" />
+</div>
+
 <div class="slide">
-	<p>Add Data<br>Boston Neighborhoods<br>Rodent Activity (CSV)<br><a target="_blank" href="http://data.graphicarto.com/maptime-qgis.zip">Data Package</a></p>
+	<p>Add Data<br>Chicago Neighborhoods<br>Rodent Complaints (CSV)<br><a target="_blank" href="https://raw.githubusercontent.com/maptime/chicago/gh-pages/qgis-101/data/maptimeChiQGIS101.zip">Data Package</a></p>
 </div>
 
 <div class="slide image_full">
@@ -303,6 +320,7 @@
 <div class="slide image_bottom">
 	<img src="images/project-properties1.png"/>
 	<p>Enable 'on the fly'</p>
+	<notes>Project - Project Properties - CRS</notes>
 </div>
 
 <div class="slide image_bottom">
@@ -336,6 +354,10 @@
 </div>
 
 <div class="slide">
+	<p>Note on editing: QGIS is really best for editing <em>shapefiles</em>. There are plugins for other formats, but keep this in mind when you're out there in the wild.</p>
+</div>
+
+<div class="slide">
 	<img src="images/geoprocessing.png"/>
 	<p>Geoprocessing</p>
 </div>
@@ -348,6 +370,11 @@
 <div class="slide image_full">
 	<img src="images/geoprocessing.png"/>
 	<p>Try Points in Polygon<br>Calculate the Neighborhoods with the most Rat Violations</p>
+	<notes>Vector > Analysis > Points in Polygon. !Be sure your layers are using the same CRS!</notes>
+</div>
+
+<div class="slide">
+	<p>If you have problems, take a look at your layers' <em>CRS</em>. For best results, make sure all of the layers you're processing have the same CRS!</p>
 </div>
 
 <div class="slide image_bottom">
@@ -410,7 +437,7 @@
 <div class="slide image_bottom">
 	<img src="images/rat-map.jpg"/>
 	<p>Make a RAT MAP!<br>Have at it, and have fun!<br>
-	<a target="_blank" href="http://data.graphicarto.com/maptime-qgis.zip">Download the Data ZIP</a></p>
+	<a target="_blank" href="https://raw.githubusercontent.com/maptime/chicago/gh-pages/qgis-101/data/maptimeChiQGIS101.zip">Download the Data ZIP</a></p>
 </div>
 
 
