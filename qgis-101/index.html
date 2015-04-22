@@ -117,8 +117,18 @@
 			font-style: normal;
 		}
 
+		.image-tile {
+			background-repeat: repeat;
+			width: 100%;
+		}
+
 		notes {
 			display: none;
+		}
+
+		strong {
+			background-color: #E6D761;
+			color: #444;
 		}
 
 	</style>
@@ -130,6 +140,18 @@
 	<p class="title">Intro to QGIS - Make a Map<br>
 	<a target="_blank" href="http://maptime.io/chicago">Maptime Chicago</a></p>
 	<a class="citation" href="https://github.com/maptime/chicago/tree/gh-pages/qgis-101">Maptime Chicago</a>
+</div>
+
+<div class="slide">
+	<p>← and → to navigate</p>
+</div>
+
+<!-- <div class="slide image-tile">
+	<img src="images/maptime.gif" />
+</div> -->
+
+<div class="slide">
+	<p>Follow along here: <a href="http://www.maptime.io/chicago/qgis-101">maptime.io/chicago/intro-slides</a></p>
 </div>
 
 <div class="slide">
@@ -234,8 +256,7 @@
 
 <div class="slide image_bottom">
 	<img src="images/rat-map.jpg"/>
-	<p>Todays Task: RAT MAP!<br>
-	<a target="_blank" href="https://data.cityofchicago.org/Service-Requests/311-Service-Requests-Rodent-Baiting/97t6-zrhs">Chicago Data Portal</a></p>
+	<p>Today's Task: RAT MAP!<br><em>#ratmap</em></p>
 </div>
 
 <div class="slide image_bottom">
@@ -284,18 +305,8 @@
 	<p>Others<br>View -> Toolbars</p>
 </div>
 
-<div class="slide image_bottom">
-	<img src="images/add-data.png"/>
-	<p class="title">Add Data</p>
-</div>
-
-<div class="slide image_bottom">
-	<p>See that nifty little comma button???</p>
-	<img src="images/add-data-csv.png" />
-</div>
-
 <div class="slide">
-	<p>Add Data<br>Chicago Neighborhoods<br>Rodent Complaints (CSV)<br><a target="_blank" href="https://raw.githubusercontent.com/maptime/chicago/gh-pages/qgis-101/data/maptimeChiQGIS101.zip">Data Package</a></p>
+	<p>We're going to run through the process of adding data <em>real quick</em>, then you'll be set loose to make your <em>#ratmap</em></p>
 </div>
 
 <div class="slide image_full">
@@ -305,6 +316,28 @@
 	<a target="_blank" href="http://www.gdal.org/formats_list.html">GDAL Raster Formats</a><br>
 	PostGIS, OracleSpatial, SpatialLite<br>
 	Tabular (csv, tsv, etc.)</p>
+</div>
+
+<div class="slide">
+	<p style="text-align: left">Add Data
+	<br>
+	<em>1. </em> Chicago Neighborhoods
+	<br>
+	<em>2. </em> Rodent Complaints (CSV)
+	<br>
+	<a target="_blank" href="https://raw.githubusercontent.com/maptime/chicago/gh-pages/qgis-101/data/maptimeChiQGIS101.zip">Data Package</a>
+	</p>
+	<a class="citation" target="_blank" href="https://data.cityofchicago.org/Service-Requests/311-Service-Requests-Rodent-Baiting/97t6-zrhs">Chicago Data Portal</a>
+</div>
+
+<div class="slide image_bottom">
+	<img src="images/add-data.png"/>
+	<p class="title">Add Data</p>
+</div>
+
+<div class="slide image_bottom">
+	<p>See that nifty little comma button???</p>
+	<img src="images/add-data-csv.png" />
 </div>
 
 <div class="slide image_full">
@@ -354,7 +387,7 @@
 </div>
 
 <div class="slide">
-	<p>Note on editing: QGIS is really best for editing <em>shapefiles</em>. There are plugins for other formats, but keep this in mind when you're out there in the wild.</p>
+	<p><strong>Note on editing</strong>: QGIS is really best for editing <em>shapefiles</em>. There are plugins for other formats, but keep this in mind when you're out there in the wild.</p>
 </div>
 
 <div class="slide">
@@ -438,6 +471,7 @@
 	<img src="images/rat-map.jpg"/>
 	<p>Make a RAT MAP!<br>Have at it, and have fun!<br>
 	<a target="_blank" href="https://raw.githubusercontent.com/maptime/chicago/gh-pages/qgis-101/data/maptimeChiQGIS101.zip">Download the Data ZIP</a></p>
+	<a class="citation" target="_blank" href="https://data.cityofchicago.org/Service-Requests/311-Service-Requests-Rodent-Baiting/97t6-zrhs">Chicago Data Portal</a>
 </div>
 
 
