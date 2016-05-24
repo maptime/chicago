@@ -4,6 +4,7 @@ markdown: kramdown
 paginate: 5
 repo: chicago
 github_org: maptime
+future: true
 maptime:
   chapter: Maptime Chicago
   twitter: maptimeCHI
