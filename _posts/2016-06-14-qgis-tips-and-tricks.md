@@ -28,4 +28,4 @@ In some ways, learning QGIS from scratch is easier than moving to it from anothe
 
 - **When**: Tuesday, June 14, 7:30 PM to 9 PM (come at 6 PM if you want food)
 - **Where**: ChiHackNight, Braintree office, 8th floor, Merchandise Mart
-- **Contact**: [Emily Zvolanek](mailto:maptimechi@gmail.com) or [Steven Vance](steve@stevevance.net).
+- **Contact**: [Emily Zvolanek](mailto:ezvolanek@anl.gov) or [Steven Vance](steve@stevevance.net).
