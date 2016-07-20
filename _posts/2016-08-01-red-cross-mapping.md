@@ -29,4 +29,5 @@ Even better? Dinner will be provided.
 
 - **When**: Monday, August 1, 6-9 PM
 - **Where**: American Red Cross - 2200 West Harrison Street, Chicago, IL 60612
+- **RSVP**: [Eventbrite](https://www.eventbrite.com/e/missing-maps-mapathon-hosted-by-the-red-cross-and-maptime-chicago-tickets-26287259902)
 - **Contact**: [Emily Zvolanek](mailto:ezvolanek@anl.gov) or [Steven Vance](steve@stevevance.net).
