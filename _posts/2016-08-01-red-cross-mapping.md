@@ -25,6 +25,10 @@ Even better? Dinner will be provided.
 * A laptop
 * [Create an OpenStreetMap account](https://www.openstreetmap.org/user/new) before you come
 
+**More resources**
+* [Missing Maps](http://www.missingmaps.org) - Figure out where in the world needs mapping and why it's important
+* [Humanitarian OpenStreetMap](https://hotosm.org/get-involved/disaster-mapping) - Start mapping immediately based on where other people say need updated maps
+
 ## Event Details:
 
 - **When**: Monday, August 1, 6-9 PM
