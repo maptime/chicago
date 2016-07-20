@@ -2,7 +2,7 @@
 layout: event
 category: event
 title: Missing Maps Mapathon hosted at the American Red Cross
-rsvpdate: https://www.eventbrite.com/e/missing-maps-mapathon-hosted-by-the-red-cross-and-maptime-chicago-tickets-26287259902
+rsvp: https://www.eventbrite.com/e/missing-maps-mapathon-hosted-by-the-red-cross-and-maptime-chicago-tickets-26287259902
 
 ---
 ## Our topic: Mapping disaster areas with the American Red Cross

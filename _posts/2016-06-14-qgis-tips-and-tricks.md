@@ -2,7 +2,7 @@
 layout: event
 category: event
 title: QGIS tips and tricks
-rsvpdate: https://www.eventbrite.com/e/chi-hack-night-registration-20361601097
+rsvp: https://www.eventbrite.com/e/chi-hack-night-registration-20361601097
 
 ---
 ## Our topic: QGIS tips and tricks

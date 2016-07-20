@@ -2,7 +2,7 @@
 layout: event
 category: event
 title: Missing Maps - mapping places before disaster strikes
-rsvpdate: https://www.eventbrite.com/e/chi-hack-night-registration-20361601097
+rsvp: https://www.eventbrite.com/e/chi-hack-night-registration-20361601097
 
 ---
 ## Our topic: Missing Maps
